@@ -21,7 +21,7 @@ abstract class SkunkTest(debug: Boolean = false, strategy: Typer.Strategy = Type
       host     = sys.env.getOrElse("POSTGRES_HOST", "localhost"),
       port     = 26257,
       user     = sys.env.getOrElse("POSTGRES_USER", "root"),
-      database = sys.env.getOrElse("POSTGRES_DB", "world"),
+      database = sys.env.getOrElse("POSTGRES_DB", "defaultdb"),
       password = Some(sys.env.get("POSTGRES_PASSWORD").getOrElse("")),
       strategy = strategy,
       debug    = debug,
